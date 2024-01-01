@@ -14,7 +14,7 @@ class WeatherModel{
     avgtemp: json["forecast"]["forecastday"][0]["day"]["avgtemp_c"],
      maxtemp: json["forecast"]["forecastday"][0]["day"]["maxtemp_c"],
       mintemp: json["forecast"]["forecastday"][0]["day"]["mintemp_c"],
-       weatherstatus: json["forecast"]["forecastday"][0]["condition"]["text"],
-       imageurl: json["forecast"]["forecastday"][0]["condition"]["icon"],);
+       weatherstatus: json["forecast"]["forecastday"][0]["day"]["condition"]["text"],
+       imageurl:json["forecast"]["forecastday"][0]["day"]["condition"]["icon"],);
  }
 }
